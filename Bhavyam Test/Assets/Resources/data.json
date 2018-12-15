@@ -1,0 +1,24 @@
+{
+    "cube": [
+        {
+            "colour": "yellow",
+            "score": 5
+        },
+        {
+            "colour": "red",
+            "score": 10
+        },
+        {
+            "colour": "green",
+            "score": 15
+        },
+        {
+            "colour": "grey",
+            "score": 20
+        },
+        {
+            "colour": "black",
+            "score": 25
+        }
+    ]
+}
