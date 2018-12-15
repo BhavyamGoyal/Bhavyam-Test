@@ -65,9 +65,11 @@ public class UI_manager : MonoBehaviour {
         }
         else if (level == 0)
         {
+            highScore = PlayerPrefs.GetInt("HighScore", 0);
             start = GameObject.FindGameObjectWithTag("start_button").GetComponent<Button>();
             start.onClick.AddListener(load_game);
             high_score = GameObject.FindGameObjectWithTag("High_Score").GetComponent<Text>();
+            high_score.text = highScore.ToString();
             current_score = null;
         }
     }
