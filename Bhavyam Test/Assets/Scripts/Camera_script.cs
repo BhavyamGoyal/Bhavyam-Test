@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_script : MonoBehaviour {
+public class Camera_script : Element {
 
-    GameObject player;
+    
     Vector3 offset;
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindGameObjectWithTag("Player");
-        offset = transform.position - player.transform.position;
+        offset = transform.position - app.view.player.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = player.transform.position + offset;
-		
+        transform.position = app.view.player.transform.position + offset;		
 	}
 }
